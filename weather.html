@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+ <style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .weather-app {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .search-box {
+    margin: 20px 0;
+  }
+  
+  .search-box input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    margin-bottom: 20px;
+  }
+  
+  .search-box button {
+    padding: 10px 15px;
+    background: #2575fc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .search-box button:hover {
+    background: #1a5bc4;
+  }
+  
+  .weather-info h2 {
+    margin: 20px 0 10px;
+    font-size: 20px;
+  }
+  
+  .weather-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+ </style>
+</head>
+<body>
+  <div class="weather-app">
+    <div class="header">
+      <h1>Weather App</h1>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Enter city name" id="city-input">
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="weather-info">
+      <h2 id="city-name">City Name</h2>
+      <p id="temperature">Temperature: --°C</p>
+      <p id="description">Description: --</p>
+      <p id="humidity">Humidity: --%</p>
+      <p id="wind">Wind Speed: -- km/h</p>
+    </div>
+  </div>
+  <script src="weather.js"></script>
+</body>
+</html>
